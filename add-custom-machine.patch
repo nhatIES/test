@@ -4321,7 +4321,7 @@ index 00000000..5227dae5
 +SRC_URI:class-devupstream += "file://stm32mp13-pinctrl.dtsi"
 +
 +# Override CFG_DRAM_SIZE board 512MB RAM and choose config MP13
-+EXTRA_OEMAKE:append:stm32mp1-tcu = " CFG_DRAM_SIZE=0x20000000 CFG_STM32MP13=y CFG_STM32MP15=n"
++EXTRA_OEMAKE:append:stm32mp1-ies = " CFG_DRAM_SIZE=0x20000000 CFG_STM32MP13=y CFG_STM32MP15=n"
 +
 +do_configure:prepend() {
 +    # Copy device tree into optee source
